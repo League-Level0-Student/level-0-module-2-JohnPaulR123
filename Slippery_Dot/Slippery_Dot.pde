@@ -22,16 +22,19 @@
     
     void mousePressed() {
       //6a. create an integer variable called distance
-      int distance=getDistance;
+      int distance=getDistance(x,y,mouseX,mouseY);
       //6b. use the getDistance method to initialize your varible
       //    use the mouse's x and y and the x and y of your ellipse 
      
       //7. print the distance variable
-    
+    print(distance);
       
       //8a. make an if statement to check if the distance variable
       //   is within the size of the ellipse
-      
+      if(distance<=200){
+      x=(int)random(500);
+      y=(int)random(500);
+      }
         //8b.  set the x and y of the ellipse to a random location on the window
        
       
